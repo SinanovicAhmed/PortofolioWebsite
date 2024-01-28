@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="absolute top-0 h-10 w-screen flex justify-between items-center px-5 xs:px-12 sm:px-14
+        className="absolute z-10 top-0 h-10 w-screen flex justify-between items-center px-5 xs:px-12 sm:px-14
                  bg-opacity-30 p-6 backdrop-filter backdrop-blur-md"
       >
         <h2 className="text-white text-2xl font-bold">
@@ -69,7 +69,7 @@ const Navbar = () => {
       </div>
       {showMenu && (
         <div
-          className="absolute left-0 top-12 h-full flex flex-col sm:hidden gap-3 text-white pr-12 px-5 xs:px-12 sm:px-14 
+          className="z-10 absolute  top-12 h-full flex flex-col sm:hidden gap-3 text-white pr-12 px-5 xs:px-12 sm:px-14 
                      bg-opacity-30 backdrop-filter backdrop-blur-md"
         >
           <a

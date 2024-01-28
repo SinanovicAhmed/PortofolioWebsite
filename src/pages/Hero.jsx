@@ -1,18 +1,16 @@
 import ComputerSVG from "../assets/svgs/computerSVG";
+import HoverHeader from "../components/HoverHeader";
 
 const Hero = () => {
   const header = "Hi, I am Fullstack Web Developer";
   return (
-    <div id="hero" className="w-full h-screen bg-slate-900 snap-center flex flex-col sm:flex-row">
+    <div
+      id="hero"
+      className="w-full h-screen bg-gradient-to-b from-slate-950 to-slate-800 snap-center flex flex-col sm:flex-row"
+    >
       <div className="w-full sm:w-1/2 h-full flex flex-col justify-center px-5 xs:px-12 sm:px-14 pt-12 sm:pt-0">
         <h2 className="text-white text-xl sm:text-3xl lg:text-5xl font-bold">
-          {header.split("").map((char, index) => {
-            return (
-              <span key={index} className="hover:animate-ping hover:text-red-300 hover:cursor-pointer">
-                {char}
-              </span>
-            );
-          })}
+          <HoverHeader header={header} />
         </h2>
         <p className="text-white text-xs lg:text-sm pt-5 sm:pt-10">
           Welcome to my digital realm, where creativity meets functionality. As a full-stack web developer, I
