@@ -14,7 +14,7 @@ const About = () => {
           </h2>
           <img src={aboutImage} alt="about image" className="object-cover rounded-full" />
         </div>
-        <p className="w-[80%] sm:w-1/2 text-xs lg:text-base sm:pl-10 pt-14 text-gray-200">
+        <p className="w-full sm:w-1/2 text-justify text-xs lg:text-base sm:pl-10 pt-14 text-gray-200">
           I am Ahmed Sinanović, a dedicated Software Engineer and Web Developer. Holding a Bachelors degree in
           Software Engineering, my expertise lies in crafting innovative and user-oriented web applications.
           For a closer look at my work, feel free to explore my projects on{" "}
