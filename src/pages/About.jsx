@@ -1,14 +1,14 @@
-import aboutImage from "../assets/about.webp";
+import aboutImage from "/images/about.webp";
 import HoverHeader from "../components/HoverHeader";
 const About = () => {
   const header = "About me";
   return (
     <div
       id="about"
-      className="w-full flex justify-between items-center h-screen bg-gradient-to-b from-slate-800 to-slate-950 snap-always snap-center px-5 xs:px-12 sm:px-14"
+      className="w-full flex justify-center items-center h-screen bg-gradient-to-b from-slate-800 to-slate-950 snap-always snap-center px-5 xs:px-12 sm:px-14"
     >
-      <div className="flex flex-col sm:flex-row items-center">
-        <div className="relative w-[80%] sm:w-[45%] lg:ml-24">
+      <div className="w-full max-w-[1250px] flex flex-col sm:flex-row items-center">
+        <div className="relative w-[80%] sm:w-[45%]">
           <h2 className="absolute bottom-2 sm:top-2 right-[-20px] sm:right-[-30%] text-start text-white text-4xl sm:text-6xl lg:text-8xl font-sans font-bold">
             <HoverHeader header={header} />
           </h2>
