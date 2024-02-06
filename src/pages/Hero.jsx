@@ -1,4 +1,3 @@
-import ComputerSVG from "../assets/svgs/computerSVG";
 import HoverHeader from "../components/HoverHeader";
 import cv from "../assets/files/cv.pdf";
 import { scrollToComponent } from "../helpers/scroll";
@@ -45,7 +44,7 @@ const Hero = () => {
           className="flex w-full sm:w-1/2 h-full justify-center items-center sm:justify-normal sm:items-normal 
                       px-5 min-[365px]:px-20 min-[465px]:px-28 sm:px-20 md:px-20 lg:px-24"
         >
-          <ComputerSVG />
+          <img src="/images/heroimage.png" alt="hero image" />
         </motion.div>
       </div>
     </section>
