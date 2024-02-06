@@ -7,15 +7,13 @@ import Portofolio from "./pages/Portofolio";
 
 function App() {
   return (
-    <>
+    <div className="w-screen h-screen snap-y snap-mandatory overflow-y-scroll no-scrollbar">
       <Navbar />
-      <div className="w-screen h-screen snap-y snap-mandatory overflow-scroll no-scrollbar">
-        <Hero />
-        <About />
-        <Portofolio />
-        <Contact />
-      </div>
-    </>
+      <Hero />
+      <About />
+      <Portofolio />
+      <Contact />
+    </div>
   );
 }
 

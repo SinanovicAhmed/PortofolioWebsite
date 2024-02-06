@@ -1,7 +1,8 @@
 import { useState } from "react";
 import HamburgerSVG from "../assets/svgs/hamburgerSVG";
 import { scrollToComponent } from "../helpers/scroll";
-
+import { motion } from "framer-motion";
+import { fade_down_animation, fade_in_animation_noscale } from "../constants/framer-motion-animations";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -9,7 +10,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div
+      <motion.div
+        {...fade_down_animation}
         className="absolute z-10 top-0 h-10 w-screen flex justify-center items-center
                    bg-opacity-30 py-6 backdrop-filter backdrop-blur-md"
       >
@@ -33,19 +35,13 @@ const Navbar = () => {
             >
               About
             </a>
-            <a
-              href="#"
-              className="transition-all duration-100 hover:font-bold"
-              onClick={() => scrollToComponent("skills")}
-            >
-              Skills
-            </a>
+
             <a
               href="#"
               className="transition-all duration-100 hover:font-bold"
               onClick={() => scrollToComponent("projects")}
             >
-              Projects
+              Portofolio
             </a>
             <a
               href="#"
@@ -62,10 +58,11 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-      </div>
+      </motion.div>
       {showMenu && (
-        <div
-          className="z-10 absolute  top-12 h-full flex flex-col sm:hidden gap-3 text-white pr-12 px-5 xs:px-12 sm:px-14 
+        <motion.div
+          {...fade_in_animation_noscale}
+          className="z-10 absolute top-12 h-full flex flex-col sm:hidden gap-3 text-white pr-12 px-5 xs:px-12 sm:px-14 
                      bg-opacity-30 backdrop-filter backdrop-blur-md"
         >
           <a
@@ -82,19 +79,13 @@ const Navbar = () => {
           >
             About
           </a>
-          <a
-            href="#"
-            className="transition-all duration-100 hover:font-bold"
-            onClick={() => scrollToComponent("skills")}
-          >
-            Skills
-          </a>
+
           <a
             href="#"
             className="transition-all duration-100 hover:font-bold"
             onClick={() => scrollToComponent("projects")}
           >
-            Projects
+            Portofolio
           </a>
           <a
             href="#"
@@ -103,7 +94,7 @@ const Navbar = () => {
           >
             Contact
           </a>
-        </div>
+        </motion.div>
       )}
     </>
   );
