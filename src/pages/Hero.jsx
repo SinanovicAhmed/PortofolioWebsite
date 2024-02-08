@@ -20,7 +20,7 @@ const Hero = () => {
           <h2 className="text-white text-xl sm:text-3xl lg:text-5xl font-bold">
             <HoverHeader header={header} />
           </h2>
-          <p className="w-full text-white text-xs lg:text-base py-5 sm:py-10">
+          <p className="w-full text-white text-justify text-xs lg:text-base py-5 sm:py-10">
             Welcome to my digital realm, where creativity meets functionality. As a full-stack web developer,
             I thrive on the dynamic synergy of code and design, building intuitive and powerful websites that
             leave a lasting impression.

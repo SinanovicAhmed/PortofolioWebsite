@@ -23,14 +23,14 @@ const Navbar = () => {
           <div className="hidden sm:flex gap-5 text-white">
             <a
               href="#"
-              className="transition-all duration-100 hover:font-bold"
+              className="transition-all delay-75 duration-100 hover:text-purple-600"
               onClick={() => scrollToComponent("hero")}
             >
               Hero
             </a>
             <a
               href="#"
-              className="transition-all duration-100 hover:font-bold"
+              className="transition-all delay-75 duration-100 hover:text-purple-600"
               onClick={() => scrollToComponent("about")}
             >
               About
@@ -38,14 +38,14 @@ const Navbar = () => {
 
             <a
               href="#"
-              className="transition-all duration-100 hover:font-bold"
+              className="transition-all delay-75 duration-100 hover:text-purple-600"
               onClick={() => scrollToComponent("projects")}
             >
               Portofolio
             </a>
             <a
               href="#"
-              className="transition-all duration-100 hover:font-bold"
+              className="transition-all delay-75 duration-100 hover:text-purple-600"
               onClick={() => scrollToComponent("contact")}
             >
               Contact
@@ -67,14 +67,14 @@ const Navbar = () => {
         >
           <a
             href="#"
-            className="transition-all duration-100 hover:font-bold"
+            className="transition-all delay-75 duration-100 hover:text-purple-600"
             onClick={() => scrollToComponent("hero")}
           >
             Hero
           </a>
           <a
             href="#"
-            className="transition-all duration-100 hover:font-bold"
+            className="transition-all delay-75 duration-100 hover:text-purple-600"
             onClick={() => scrollToComponent("about")}
           >
             About
@@ -82,14 +82,14 @@ const Navbar = () => {
 
           <a
             href="#"
-            className="transition-all duration-100 hover:font-bold"
+            className="transition-all delay-75 duration-100 hover:text-purple-600"
             onClick={() => scrollToComponent("projects")}
           >
             Portofolio
           </a>
           <a
             href="#"
-            className="transition-all duration-100 hover:font-bold"
+            className="transition-all delay-75 duration-100 hover:text-purple-600"
             onClick={() => scrollToComponent("contact")}
           >
             Contact

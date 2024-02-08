@@ -23,7 +23,7 @@ const Contact = () => {
           {...fade_right_animation}
           className="w-full md:w-1/2 flex flex-col gap-6 text-3xl md:text-2xl"
         >
-          <h2 className="text-white">Send me a message.</h2>
+          <h2 className="text-2xl md:text-3xl text-white">Send me a message.</h2>
           <ContactForm />
         </motion.div>
       </div>

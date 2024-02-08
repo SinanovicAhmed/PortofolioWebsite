@@ -11,7 +11,7 @@ const SlidingSkills = () => {
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         {skills.map((image) => (
           <li key={image}>
-            <img width={60} height={60} src={image.image} alt={image.name} />
+            <img width={55} height={55} src={image.image} alt={image.name} />
           </li>
         ))}
       </ul>
@@ -21,7 +21,7 @@ const SlidingSkills = () => {
       >
         {skills.map((image) => (
           <li key={Math.random()}>
-            <img width={60} height={60} src={image.image} alt={image.name} />
+            <img width={55} height={55} src={image.image} alt={image.name} />
           </li>
         ))}
       </ul>

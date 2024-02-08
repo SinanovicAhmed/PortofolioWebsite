@@ -9,9 +9,9 @@ const Portofolio = () => {
       id="projects"
       className="w-full h-screen bg-gradient-to-b from-slate-950 to-slate-800 snap-center flex justify-center"
     >
-      <div className="relative w-full max-w-[1250px] h-full flex flex-col justify-between px-5 sm:px-14 pt-20 pb-5">
+      <div className="relative w-full max-w-[1250px] h-full flex flex-col justify-between px-5 sm:px-14 pt-20 pb-10">
         <motion.div {...fade_down_animation}>
-          <h2 className="text-white text-2xl md:text-3xl font-bold">&lt; Portofolio /&gt;</h2>
+          <h2 className="text-white text-2xl md:text-3xl font-bold pb-5">&lt; Portofolio /&gt;</h2>
         </motion.div>
         <DisplayProjects />
         <SlidingSkills />

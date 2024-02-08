@@ -4,7 +4,7 @@ export const fade_left_animation = {
   transition: { duration: 0.5 },
   variants: {
     visible: { x: 0, opacity: 1, scale: 1 },
-    hidden: { x: -100, opacity: 0, scale: 0 },
+    hidden: { x: -50, opacity: 0, scale: 0.5 },
   },
 };
 
@@ -13,7 +13,7 @@ export const fade_right_animation = {
   whileInView: "visible",
   transition: { duration: 0.5 },
   variants: {
-    hidden: { opacity: 0, scale: 0, x: 100 },
+    hidden: { opacity: 0, scale: 0.5, x: 50 },
     visible: { opacity: 1, scale: 1, x: 0 },
   },
 };

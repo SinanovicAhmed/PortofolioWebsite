@@ -25,10 +25,10 @@ const DisplayProjects = () => {
   return (
     <motion.div {...fade_in_animation}>
       <div className="flex flex-col-reverse lg:flex-row w-full max-w-[1200px] mx-auto">
-        <div className="flex flex-col justify-between w-full lg:w-1/2 pt-6 lg:pt-0 lg:pr-5">
+        <div className="min-h-[200px] flex flex-col justify-between w-full lg:w-1/2 pt-6 lg:pt-0 lg:pr-5">
           <span className="lg:block">
             <h2 className="text-white text-md md:text-xl font-bold pb-2">{projects[projectIndex].name}</h2>
-            <p className="text-white text-xs lg:text-base">{projects[projectIndex].description}</p>
+            <p className="text-gray-300 text-xs lg:text-base">{projects[projectIndex].description}</p>
           </span>
           <span className="w-full flex gap-4 mt-4 lg:mt-0">
             <a href={projects[projectIndex].demo} target="_blank" rel="noreferrer">
@@ -47,7 +47,7 @@ const DisplayProjects = () => {
           <img className="object-cover" src={projects[projectIndex].image} />
         </div>
       </div>
-      <span className="flex justify-center items-center gap-3 pt-10">
+      <span className="flex justify-center items-center gap-5 pt-10">
         <button onClick={goPrevious} className="text-white text-xl p-2 hover:text-purple-500">
           &lt;
         </button>
