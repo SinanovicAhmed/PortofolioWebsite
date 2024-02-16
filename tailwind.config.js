@@ -7,7 +7,9 @@ export default {
         "spin-slow": "spin 8s linear infinite",
         "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
-
+      height: {
+        screen: ["100vh", "100dvh"],
+      },
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },

@@ -34,6 +34,7 @@ const ContactForm = () => {
           <EmailSVG />
         </div>
         <input
+          required
           name="user_email"
           type="email"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
@@ -42,6 +43,7 @@ const ContactForm = () => {
       </div>
       <div className="relative mb-6">
         <input
+          required
           name="user_name"
           type="text"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
@@ -50,6 +52,7 @@ const ContactForm = () => {
       </div>
       <div className="relative mb-6">
         <textarea
+          required
           name="message"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
           placeholder="Message here"

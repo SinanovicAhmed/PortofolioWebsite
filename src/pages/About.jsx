@@ -13,7 +13,7 @@ const About = () => {
     >
       <div className="w-full max-w-[1250px] flex flex-col sm:flex-row items-center">
         <motion.div {...fade_left_animation} className="relative w-[80%] sm:w-[45%]">
-          <h2 className="absolute bottom-2 sm:top-2 right-[-20px] sm:right-[-30%] text-start text-white text-4xl sm:text-6xl lg:text-8xl font-sans font-bold">
+          <h2 className="absolute bottom-2 sm:top-2 right-[-20px] sm:right-[-30%] text-start text-white text-4xl sm:text-6xl lg:text-8xl font-sans font-bold drop-shadow-2xl">
             <HoverHeader header={header} />
           </h2>
           <img src={aboutImage} alt="about image" className="object-cover rounded-full" />
